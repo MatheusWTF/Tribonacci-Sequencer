@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">    
     <title>Tribonacci Sequencer</title>
 </head>
 <body>
@@ -15,13 +16,22 @@
     </header>
     <section>
         <div class="container">
-            <div class="form-control">
-                <label for="number">How many Tribonnaci numbers:</label>
-                <input type="number" name="number" id="number" onChange="fibonacci()" placeholder="Insert a Number and Press Enter">
+            <div class="card">
+                <div class="card-content">
+                    <div class="form-control">
+                        <label for="number">How many Fibonnaci numbers:</label>
+                        <input type="number" name="number" id="number" onkeyup="fibonacci()" placeholder="Insert a Number and Press Enter">
+                    </div>
+                </div>
+                <div class="card-action">
+                    <div class="input-field">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    </div>
+                </div>
             </div>
-            <textarea name="output" id="outp" cols="30" rows="10"></textarea>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
     <script src="./js/main.js"></script>
 </body>
 </html>

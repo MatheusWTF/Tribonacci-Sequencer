@@ -1,6 +1,6 @@
 const number = document.getElementById('number');
 const submit = document.getElementById('submit');
-const output = document.getElementById('outp');
+const output = document.getElementById('textarea1');
 
 
 function fibonacci(){
